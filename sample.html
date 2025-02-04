@@ -1,0 +1,74 @@
+<style>/* General styling */
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Splash Screen */
+    .splash-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f4f4f4;
+    }
+    
+    /* Landing Page */
+    .landing-screen .search-bar, .landing-screen .filters {
+      width: 100%;
+      margin: 10px auto;
+    }
+    
+    /* Scholarship Card */
+    .scholarship-card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+    }
+    
+    /* Signup Page */
+    .signup-page form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .signup-page input, .otp-login input {
+      padding: 8px;
+      margin-top: 4px;
+    }
+    
+    /* OTP Screen */
+    .otp-input input {
+      width: 40px;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    </style>
+<div class="otp-login">
+    <h2>OTP Login</h2>
+    <form>
+      <label for="mobile">Mobile Number</label>
+      <div class="phone-input">
+        <select id="country-code">
+          <!-- Country codes here -->
+        </select>
+        <input type="tel" id="mobile" required/>
+      </div>
+  
+      <label for="otp">Enter OTP</label>
+      <div class="otp-input">
+        <input type="text" maxlength="1"/>
+        <input type="text" maxlength="1"/>
+        <input type="text" maxlength="1"/>
+        <input type="text" maxlength="1"/>
+      </div>
+  
+      <button type="submit">Verify OTP</button>
+    </form>
+  </div>
+  
